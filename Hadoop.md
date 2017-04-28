@@ -47,13 +47,13 @@ mv 	   移动，也可以用来重命名
 cp -r      拷贝，-r表示递归拷贝  
 tar -zcvf   打包文件，-zcvf先打包然后进行压缩，-zxvf解压文件  
 
-（images/1.PNG）
+![](images/1.PNG)
 
 ### 3. 配置linxu的基本环境（centos系统）
 
-（images/2.PNG）
+![](images/2.PNG)
 
-（images/3.PNG）
+![](images/3.PNG)
 
 
 1. 修改机器名字，便于寻找  
