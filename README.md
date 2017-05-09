@@ -1,3 +1,3 @@
-﻿# Linux
+# Linux
 
-[Hadhoop](Hadoop.md)
+[Hadhoop](doc/Hadoop.md)
