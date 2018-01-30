@@ -4,9 +4,9 @@
 
 ### 1.所需工具   
 
-1. Xme_5.0.547.exe  ：用来连接linux服务器，传输文件。   
-2. FastDFS_v5.05.tar.gz  ：  FastDfs核心文件   
-3. libfastcommon-master.zip ：centOS安装FastDefs所需   
+1. [Xme_5.0.547.exe](https://pan.baidu.com/s/1i5ThZpz)  ：用来连接linux服务器，传输文件。   
+2. [FastDFS_v5.05.tar.gz](https://pan.baidu.com/s/1htBPtiO)  ：  FastDfs核心文件   
+3. [libfastcommon-master.zip](https://pan.baidu.com/s/1dGOMDJr) ：centOS安装FastDefs所需   
 4. 已安装好的CentOs7系统的linux服务器    
 
 ### 2.环境准备   
