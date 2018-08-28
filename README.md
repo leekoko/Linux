@@ -4,3 +4,5 @@
 
 ### 2.[FastDfs单机搭建](doc/FastDfs.md)       
 
+### 3.[linux安装](doc/linuxFirst.md)
+
