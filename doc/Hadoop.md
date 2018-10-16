@@ -58,4 +58,4 @@ tar -zcvf   打包文件，-zcvf先打包然后进行压缩，-zxvf解压文件
 
 1. 修改机器名字，便于寻找  
 可以直接修改配置文件  vi /etc/sysconfig/network  
-修改hostname，保存退出  
+修改hostname，保存退出
