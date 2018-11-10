@@ -13,7 +13,7 @@
 
 1. 安装好Xshell，并连接上linux系统    
 2. 安装java环境，命令``yum install make cmake gcc gcc-c++``   
-3. 上传 **libfastcommon-master.zip** & **FastDFS_v5.05.tar.gz** 到/usr/local/software下。
+3. 上传 **libfastcommon-master.zip** & **FastDFS_v5.05.tar.gz** 到/usr/local/software下。  
 
 ## 2.安装libfastcommon   
 
