@@ -40,7 +40,6 @@ Z：能连接，并且带有JDK的环境
 
 5. 安装g++  ``yum install gcc gcc-c++``   
 
-6. 
 
 安装欠缺的命令
 

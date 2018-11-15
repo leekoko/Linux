@@ -106,7 +106,7 @@
 
    【注意】因为单机部署，所以tracker_server指向本机的tracker。这里的本机ip不能用127.0.0.1，而应该是本机的真是ip，否者会启动失败。查看本机ip可以用``ifconfig``   
 
-3. 创建存储目录：``mkdir -p /fastdfs/storagea``   
+3. 创建存储目录：``mkdir -p /fastdfs/storage``   
 
 4. 启动storage存储: ``/etc/init.d/fdfs_storaged start``   
 
