@@ -1,15 +1,15 @@
 # FastDfs单机搭建   
 
-## 1.准备工作   
+## 1.环境安装
 
-### 1.所需工具   
+Z：所需工具如下  
 
 1. [Xme_5.0.547.exe](https://pan.baidu.com/s/1i5ThZpz)  ：用来连接linux服务器，传输文件。   
 2. [FastDFS_v5.05.tar.gz](https://pan.baidu.com/s/1htBPtiO)  ：  FastDfs核心文件   
 3. [libfastcommon-master.zip](https://pan.baidu.com/s/1dGOMDJr) ：centOS安装FastDefs所需   
 4. 已安装好的CentOs7系统的linux服务器    
 
-### 2.环境准备   
+Z：安装以下工具   
 
 1. 安装好Xshell，并连接上linux系统    
 2. 安装java环境，命令``yum install make cmake gcc gcc-c++``   
@@ -131,6 +131,6 @@
 
 2. 开启防火墙   
 
-   开启的方式有很多种，请自行搜索。
+   开启的方式有很多种，请自行搜索
 
 3. 如果要文件能够通过http访问，还需要配置nginx，这里推荐文章[分布式文件系统FastDFS安装与配置(单机)](http://www.cnblogs.com/Eivll0m/p/5378328.html)
