@@ -6,3 +6,5 @@
 
 ### 3.[linux安装](doc/linuxFirst.md)
 
+### 4.[查看文本](doc/linux-read.md)
+
