@@ -134,3 +134,39 @@ Z：安装以下工具
    开启的方式有很多种，请自行搜索
 
 3. 如果要文件能够通过http访问，还需要配置nginx，这里推荐文章[分布式文件系统FastDFS安装与配置(单机)](http://www.cnblogs.com/Eivll0m/p/5378328.html)
+
+## 7.原理
+
+1. storage是逐个和tracker进行交互的，tracker之间没有通讯
+2. server存放随机，server直接平等，没有主从关系
+3. 下载选择服务器的条件:源存储器，同步时间>创建时间的存储器，文件创建时间大于约定时间(如5分钟已同步完)
+
+## 8.扩展使用
+
+### 1.防止盗链
+
+添加token：只能用在自己的网站，一定的时间过期 
+
+### 2.减轻压力
+
+fastdfs和nginx集成，直接从文件服务器取文件，减轻业务服务器的压力。
+
+## 9.迁移文件目录
+
+1. 创建新的文件目录``mkdir /mnt/fastdfsnew``   
+
+2. 将所有文件拷贝到新目录下``cp -a /fastdfs/* /mnt/fastdfsnew ``(注意不要重复拷贝)   
+
+3. 通过命令对比文件夹是否有差异``diff -r /fastdfs/ /mnt/fastdfsnew/``  
+
+4. 分别查看文件夹大小``du -sh /fastdfs/ ``,``du -sh /mnt/fastdfsnew/ ``   
+
+5. 修改存储器配置文件``vim /etc/fdfs/storage.conf``
+
+   ```
+   base_path=/fastdfs/storage  -->  /mnt/fastdfsnew/storage
+   store_path0=/fastdfs/storage  -->  /mnt/fastdfsnew/storage
+   ```
+
+6. 重启存储器``/etc/init.d/fdfs_storaged restart``
+
