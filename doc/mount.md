@@ -8,7 +8,7 @@
 
    ![](../images/m01.png)  
 
-2. 对新增磁盘进行分区``fdisk /dev/sdc(磁盘)``
+2. 对新增磁盘进行分区``fdisk /dev/vdb(磁盘)``
 
    1. 输入n(增加一个新的分区)
    2. 选输入p（选则为主分区）
@@ -22,24 +22,24 @@
 
    ![](../images/m02.png)  
 
-5. 通过``mkfs -t ext3 /dev/sdc1(磁盘)``（**高危**）格式化磁盘为指定文件系统。
+5. 通过``mkfs -t ext3 /dev/vdb1(磁盘)``（**高危**）格式化磁盘为指定文件系统。
 
 6. 将新硬盘挂载到新目录下
 
-   1. ``cd /mnt/``
+   1. ``cd /home/``
    2. ``mkdir fastdfsnew``
-   3. ``mount /dev/sdc1(磁盘) /mnt/fastdfsnew``
+   3. ``mount /dev/vdb1(磁盘) /home/fastdfsnew``
    4. 查看挂载``df -h``
 
-7. 迁移旧文件到新目录
+7. [迁移旧文件到新目录](https://github.com/leekoko/Linux/blob/master/doc/FastDfs.md#9迁移文件目录)
 
-   	1. ``cp -a /fastdfs/* /mnt/fastdfsnew``    
-    	2. 修改配置文件指向新的目录（也可以将文件复制过来，删除旧的文件夹内容（**高危**））
+   	1. ``cp -a /fastdfs/* /home/fastdfsnew``    
+    2. 修改配置文件指向新的目录（也可以将文件复制过来，删除旧的文件夹内容（**高危**））
 
 8. 设置开机挂载
 
    1. ``vi /etc/fstab``
-   2. 添加一行``/dev/sdc1  /mnt/fastdfsnew ext3  defaults  1  2``
+   2. 添加一行``/dev/sdc1  /home/fastdfsnew ext3  defaults  1  2``
 
 9. 重启，``df -h``查看   
 

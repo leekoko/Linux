@@ -6,5 +6,7 @@
 
 ### 3.[linux安装](doc/linuxFirst.md)
 
-### 4.[查看文本](doc/linux-read.md)
+### 4.[查看文本](doc/linux-read.md)   
+
+### 5.[硬盘挂载](doc/mount.md)
 
